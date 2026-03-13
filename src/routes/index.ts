@@ -23,6 +23,7 @@ import informationRoutes from './informationRoutes';
 import ivaRoutes from './ivaRoutes';
 import facturacionRoutes from './facturacionRoutes';
 import saleWebRoutes from './saleWebRoutes';
+import creditoRoutes from './creditoRoutes';
 
 const router = Router();
 
@@ -52,5 +53,6 @@ router.use('/ecommerce/products', productERoutes);
 router.use('/stripe', stripeRoutes);
 router.use('/ecommerce/categories', categoriesRoutes);
 router.use('/ecommerce/quotes', quotesERoutes);
-
+router.use('/ecommerce/credito', creditoRoutes);
+    
 export default router;
